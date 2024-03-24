@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+h1 {
+    text-align: center;
+    top: 10px;
+}
+
+.signup-div {
+    height: 480px;
+    width: 700px;
+    top: 30px;
+    left: 400px;
+}
+
+h1, .signup-div {
+    position: relative;
+}
+
+.sign-img, .sign-text {
+    position: absolute;
+    height: 80vh;
+    width: 50%;
+}
+
+.sign-img{
+    background-image: url("../Templates/hr.jpg");
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.sign-text {
+    right: 0;
+}
+
+.form-group {
+    margin: 5px 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+    margin-left: 10px 
+}
+
+input {
+    padding: 10px 15px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+input, button {
+    outline: none;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-group, .link-group {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link-group {
+    margin-bottom: 5px;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a, label {
+    color: #fff;
+}
